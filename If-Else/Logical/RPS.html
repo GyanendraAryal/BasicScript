@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors</title>
+</head>
+
+<body>
+    <script>
+        let man1 = prompt("Enter your choice.");
+        let man2 = prompt("Enter your choice.");
+        man1.toLowerCase();
+        man2.toLowerCase();
+
+        if (man1 === man2) {
+            console.log("It's a tie.");
+        }
+        else if ((man1 === "r" && man2 === "s") ||
+            (man1 === "p" && man2 === "r") ||
+            (man1 === "s" && man2 === "p")
+        ) {
+            console.log("Man1 wins!!");
+        }
+        else if ((man2 === "r" && man1 === "s") ||
+            (man2 === "p" && man1 === "r") ||
+            (man2 === "s" && man1 === "p")
+        ) {
+            console.log("Man2 wins!!");
+        }
+        else{
+            console.log("Your choice is invalid!!");
+        }
+
+
+    </script>
+</body>
+
+</html>
