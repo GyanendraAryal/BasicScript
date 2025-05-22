@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCM</title>
+</head>
+
+<body>
+    <script>
+        let n1 = Number(prompt("Enter the first number:"));
+        let n2 = Number(prompt("Enter the second number:"));
+
+        let max = (n1 > n2) ? n1 : n2;
+
+        while (true) {
+            if (max % n1 === 0 && max % n2 === 0) {
+                document.write("The LCM of " + n1 + " and " + n2 + " is " + max);
+                break;
+            } max++;
+        }
+    </script>
+
+</body>
+
+</html>
