@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LargestNumber</title>
+</head>
+
+<body>
+    <script>
+        let numbers = Number(prompt("Enter the elements:"));
+        let arr = [];
+        for (let i = 0; i < numbers; i++) {
+            let input = Number(prompt("Enter the " + (i + 1) + " number:"));
+            arr.push(input);
+        }
+        let max = arr[0]
+        for (j = 1; j < arr.length; j++) {
+            if (arr[j] > max) {
+                max = arr[j];
+            }
+        } console.log("Greater number in the array is:" + max);
+    </script>
+</body>
+
+</html>

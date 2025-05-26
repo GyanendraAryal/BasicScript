@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuplicateElement</title>
+</head>
+
+<body>
+    <script>
+        let num = Number(prompt("Enter the number of elements you want:"));
+        let arr = [];
+        for(let a=0;a<num;a++){
+            let input = Number(prompt("Enter the numbers:"));
+            arr.push(input);
+        }
+
+        for(let i = 0;i<arr.length;i++){
+            for(let j = i+1;j<arr.length;j++){
+                if(arr[i]===arr[j]){
+                    arr.splice(j,1);
+                    j--;
+                }
+            }
+        } console.log("Array without duplicate elements: "+arr);
+
+        
+    </script>
+
+</body>
+
+</html>
