@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrequencyCheck</title>
+</head>
+<body>
+    <script>
+        let num = Number(prompt("Enter the number of elements:"));
+        let arr = [];
+        for(let j=0;j<num;j++){
+            let input = Number(prompt("Enter the elements:"));
+            arr.push(input);
+        }
+        let count=0;
+        let f = Number(prompt("Frequency number:"));
+        for(let i=0;i<arr.length;i++){
+                if(f==arr[i]){
+                    count++;
+                }
+        }console.log("Frequency of "+f+" is "+count);
+    </script>
+</body>
+</html>
