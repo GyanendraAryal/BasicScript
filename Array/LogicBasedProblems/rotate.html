@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate</title>
+</head>
+
+<body>
+    <script>
+        let arr = [1,2,3,4];
+        let step = 2;
+        for(let i=0;i<step;i++){
+            let output = arr.pop();
+            arr.unshift(output);
+        }
+        console.log("Array after rotating is: "+arr);
+        
+        /*let arr = [8, 9, 10, 11, 12, 13, 14, 15];
+
+        // Rotate right by 2 steps
+        let steps = 2;
+        for (let i = 0; i < steps; i++) {
+            let last = arr.pop();      // Remove last element
+            arr.unshift(last);         // Add it to the beginning
+        }
+
+        console.log(arr); */
+    </script>
+</body>
+
+</html>
