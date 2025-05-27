@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SumOfMainDiagonal</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+        for(let i=0;i<3;i++){
+            arr[i]=[];
+            for(let j=0;j<3;j++){
+                let num=Number(prompt("Enter the elements:"));
+                arr[i][j]=num;
+            }
+        } document.write("The sum of main diagonal is:");
+        let sum=0;
+        for(let a=0;a<3;a++){
+           sum+=arr[a][a];
+        }document.write(sum);
+    </script>
+</body>
+</html>

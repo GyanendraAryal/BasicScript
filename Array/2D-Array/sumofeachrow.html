@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SumOfEachRow</title>
+</head>
+<body>
+    <script>
+        let arr=[];
+        for(let i=0;i<3;i++){
+            arr[i]=[];
+            for(let j=0;j<3;j++){
+                let num=Number(prompt("Enter the numbers:"));
+                arr[i][j]=num;
+            }
+        }
+document.write("The sum of first row is:");
+document.write("<br>");
+let a=Number(prompt("Enter the row whose sum you want ranging between 0-2:"));
+            let sum=0;
+            for(let j=0;j<3;j++){
+                sum+=arr[a][j];
+            }document.write(sum);
+    </script>
+</body>
+</html>
