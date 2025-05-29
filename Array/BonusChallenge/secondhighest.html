@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecondHighest</title>
+</head>
+
+<body>
+    <script>
+        let number = Number(prompt("Enter how many numbers:"));
+        let arr = [];
+
+        // Input numbers
+        for (let i = 0; i < number; i++) {
+            let input = Number(prompt("Enter number " + (i + 1) + ":"));
+            arr.push(input);
+        }
+
+        // Find the largest and second largest
+        let max = -Infinity;
+        let secondMax = -Infinity;
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                secondMax = max;
+                max = arr[i];
+            } else if (arr[i] > secondMax && arr[i] < max) {
+                secondMax = arr[i];
+            }
+        }
+
+        if (secondMax === -Infinity) {
+            document.write("There is no distinct second largest number.");
+        } else {
+            document.write("Second largest number is: " + secondMax);
+        }
+    </script>
+
+</body>
+
+</html>

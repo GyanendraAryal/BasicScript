@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+
+<body>
+    <script>
+        let arr = [1, 2, 2, 1];
+        let reversed = [];
+
+        // Reverse the array manually
+        for (let i = arr.length - 1; i >= 0; i--) {
+            reversed.push(arr[i]);
+        }
+
+        // Compare original and reversed
+        let isPalindrome = true;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] !== reversed[i]) {
+                isPalindrome = false;
+                break;
+            }
+        }
+
+        // Display result
+        if (isPalindrome) {
+            document.write("Given array is a palindrome.<br>");
+            document.write("Because reversed array is also: " + reversed.join(", "));
+        } else {
+            document.write("Given array is not a palindrome.");
+        }
+    </script>
+
+</body>
+</html>
