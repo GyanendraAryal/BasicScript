@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SquareOfNumber</title>
+    <title>Greet</title>
 </head>
 <body>
     <script>
-        let num=Number(prompt("Enter the number:"));
-        let square=()=>{
-            return num*num;
+        let name=prompt("Enter your name:");
+        function greet(name) {
+            return document.write("Hello, " + name + "!");
         }
-        document.write("Square of "+num+ " is: "+square());
+        greet(name);
     </script>
 </body>
 </html>
