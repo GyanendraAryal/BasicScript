@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+   <script>
+    // 1. Define the functions first
+    function add(x, y) {
+        return x + y;
+    }
+    function subtract(x, y) {
+        return x - y;
+    }
+    function multiply(x, y) {
+        return x * y;
+    }
+    function divide(x, y) {
+        return y !== 0 ? x / y : "Cannot divide by zero";
+    }
+
+    // 2. Map string operations to actual functions
+    const operations = {
+        add: add,
+        subtract: subtract,
+        multiply: multiply,
+        divide: divide
+    };
+
+    // 3. Get user input
+    let num1 = Number(prompt("Enter the first number:"));
+    let num2 = Number(prompt("Enter the second number:"));
+    let op = prompt("Enter the operation (add, subtract, multiply, divide):").toLowerCase();
+
+    // 4. General function to apply the operation
+    function calculate(n, m, operation) {
+        return operation(n, m);
+    }
+
+    // 5. Get the corresponding function from the map
+    let selectedOp = operations[op];
+
+    // 6. Run and display the result
+    let output = selectedOp 
+        ? calculate(num1, num2, selectedOp) 
+        : "Invalid operation";
+        
+    document.write(`The ${op} of two numbers is ${output}`);
+</script>
+
+</body>
+</html>
