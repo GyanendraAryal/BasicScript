@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,5,4,8];
+        let myReduce=(ar)=>{
+            let total=1;
+            let finalAns=ar.reduce((total,v,i)=>total*v);
+            return finalAns;
+        }
+        let output=myReduce(arr);
+        document.write("Multiplication of all values is: "+output);
+    </script>
+</body>
+</html>

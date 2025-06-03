@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+    <script>
+        let arr=[1,5,4,2,6,9,8,7,4,2,21,4,55,7,62,45,12,44,4,7,5,65,35,32,];
+        function myEven(inputArray){
+            let result=inputArray.filter((v,i)=>v%2==0);
+            return result;
+        }
+        let output=myEven(arr);
+        document.write("Even numbers are: "+output);
+    </script>
+</body>
+</html>

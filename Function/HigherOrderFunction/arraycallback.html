@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayCallback</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3,4,5];
+
+        function myCallback(inputArray){
+            let result=0;
+            for(let i=0;i<inputArray.length;i++){
+                result+=inputArray[i];
+            } return result; 
+        }
+        function myMain(arr1,final){
+            return final(arr1);
+        };
+
+        let output=myMain(arr,myCallback);
+        document.write(output);
+    </script>
+</body>
+</html>
