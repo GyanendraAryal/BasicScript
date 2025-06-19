@@ -5,7 +5,7 @@ txt.addEventListener('input',()=>{
     charcount.innerText=`Character ${count}`;
     if(count>100){
         document.body.style.backgroundColor="red";
-        charcount.innerText= `Warning!! You exceeded your limits. ${count}`;
+        charcount.innerText= `Warning!! You exceeded your limits!! ${count}`;
     }else{
         document.body.style.backgroundColor="white";
     }
