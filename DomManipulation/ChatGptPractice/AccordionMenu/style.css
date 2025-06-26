@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    min-height: 50px;
+    width: 1000px;
+    font-size:xx-large ;
+    background-color: rgb(87, 225, 126);
+    border-radius: 10px;
+}
+.question{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    min-height: 50px;
+    width: 1000px;
+}
