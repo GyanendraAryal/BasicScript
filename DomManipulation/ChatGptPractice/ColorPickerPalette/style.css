@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    width: 90%;
+    height: 50vh;
+    background-color: chocolate;
+    margin: 5% auto;
+    justify-content: center;
+    align-items: center;
+}
+#take{
+    height: 2rem;
+    width: 40rem;
+    border: 2px solid black;
+    margin: 5rem 450px;
+}
