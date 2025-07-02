@@ -68,3 +68,21 @@ h2{
 #btn:hover {
   background-color: orange;
 }
+#btn1:hover {
+  background-color: orange;
+}
+.button{
+    display: flex;
+    min-height: 50px;
+    min-width: 200px;
+    justify-content: space-between;
+    column-gap: 400px;
+}
+#btn1{
+     font-size: larger;
+    height: 50px;
+    width: 100px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 25px;
+}

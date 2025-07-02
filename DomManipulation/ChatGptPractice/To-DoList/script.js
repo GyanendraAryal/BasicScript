@@ -1,6 +1,7 @@
 let txt = document.getElementById("ans");
 let btn = document.getElementById("btn");
 let items = document.getElementById("items");
+let btn1=document.querySelector("#btn1");
 btn.addEventListener("click", () => {
     const newValue = txt.value.trim();
     if (!newValue) return;
@@ -8,4 +9,10 @@ btn.addEventListener("click", () => {
     li.innerText = newValue;
     items.appendChild(li);
     txt.value = "";
+});
+btn1.addEventListener("click",()=>{
+    if(items.lastElementChild){
+        items.removeChild(items.lastElementChild);
+    }
+    txt.value="";
 });
